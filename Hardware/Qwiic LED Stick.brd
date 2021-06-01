@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -5326,8 +5326,8 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <element name="U$7" library="output" package="#DO#0" value="" x="86.36" y="11.43" smashed="yes"/>
 <element name="U$15" library="output" package="#_DO#0" value="" x="90.297" y="11.43" smashed="yes" rot="MR0"/>
 <element name="U$16" library="output" package="#_CO#0" value="" x="90.17" y="13.97" smashed="yes" rot="MR0"/>
-<element name="U$13" library="output" package="QWIIC_LED_STICK0" value="" x="36.83" y="21.59" smashed="yes"/>
-<element name="U$27" library="output" package="QWIIC_LED_STICK0" value="" x="55.88" y="21.59" smashed="yes" rot="MR0"/>
+<element name="U$13" library="output" package="QWIIC_LED_STICK0" value="" x="35.56" y="21.59" smashed="yes"/>
+<element name="U$27" library="output" package="QWIIC_LED_STICK0" value="" x="54.483" y="21.59" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="3.3V">
