@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -33,9 +33,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -8282,7 +8282,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <attribute name="PROD_ID" value="RES-07856" x="7.62" y="1.016" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="VALUE" x="7.62" y="1.778" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="D13" library="SparkFun-LED" package="LED-0603" value="RED" x="7.62" y="2.54" smashed="yes" rot="R180">
+<element name="D10" library="SparkFun-LED" package="LED-0603" value="RED" x="7.62" y="2.54" smashed="yes" rot="R180">
 <attribute name="NAME" x="7.62" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="DIO-00819" x="7.62" y="2.54" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="VALUE" x="7.62" y="3.175" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
@@ -8529,7 +8529,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <contactref element="J2" pad="1"/>
 <contactref element="C4" pad="2"/>
 <contactref element="J4" pad="1"/>
-<contactref element="D13" pad="C"/>
+<contactref element="D10" pad="C"/>
 <contactref element="D0" pad="P3"/>
 <contactref element="D1" pad="P3"/>
 <contactref element="D2" pad="P3"/>
@@ -8623,7 +8623,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </signal>
 <signal name="N$3">
 <contactref element="R3" pad="1"/>
-<contactref element="D13" pad="A"/>
+<contactref element="D10" pad="A"/>
 <wire x1="8.47" y1="1.016" x2="8.47" y2="2.513" width="0.254" layer="1"/>
 <wire x1="8.47" y1="2.513" x2="8.497" y2="2.54" width="0.254" layer="1"/>
 </signal>

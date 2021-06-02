@@ -24956,7 +24956,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP5" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="D13" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
+<part name="D10" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D0" library="SparkFun-LED" deviceset="APA102" device="-5050"/>
 <part name="SUPPLY18" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -25097,7 +25097,7 @@ Close jumper to use VIN as VLED
 <instance part="SUPPLY10" gate="G$1" x="231.648" y="80.264" smashed="yes">
 <attribute name="VALUE" x="231.648" y="83.058" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="D13" gate="G$1" x="231.648" y="49.784" smashed="yes">
+<instance part="D10" gate="G$1" x="231.648" y="49.784" smashed="yes">
 <attribute name="NAME" x="228.219" y="45.212" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="233.553" y="45.212" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
@@ -25360,7 +25360,7 @@ Close jumper to use VIN as VLED
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="D13" gate="G$1" pin="C"/>
+<pinref part="D10" gate="G$1" pin="C"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="231.648" y1="42.164" x2="231.648" y2="44.704" width="0.1524" layer="91"/>
 </segment>
@@ -25520,7 +25520,7 @@ Close jumper to use VIN as VLED
 <net name="N$3" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="D13" gate="G$1" pin="A"/>
+<pinref part="D10" gate="G$1" pin="A"/>
 <wire x1="231.648" y1="52.324" x2="231.648" y2="54.864" width="0.1524" layer="91"/>
 </segment>
 </net>
