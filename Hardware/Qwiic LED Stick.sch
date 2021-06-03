@@ -25035,7 +25035,7 @@ Closed Jumper: 0x22</text>
 <wire x1="0" y1="88.9" x2="160.02" y2="88.9" width="0.2032" layer="97" style="longdash"/>
 <text x="33.274" y="155.956" size="1.27" layer="97" font="vector">Cut jumper to remove 3.3V power
 Close jumper to use VIN as VLED
--0.3V &lt; VIN &lt; 5.5V</text>
+VIN Max: 5.5V</text>
 <text x="148.59" y="6.604" size="2.54" layer="94" font="vector">Revised by: Priyanka Makin</text>
 <wire x1="160.02" y1="88.9" x2="193.04" y2="88.9" width="0.2032" layer="97" style="longdash"/>
 <wire x1="193.04" y1="88.9" x2="248.92" y2="88.9" width="0.2032" layer="97" style="longdash"/>
