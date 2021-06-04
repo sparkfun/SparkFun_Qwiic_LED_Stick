@@ -24986,7 +24986,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="ADDR" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
-<part name="LED_PWR" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39288/1" value="JUMPER-SMT_3_1-NC_TRACE_SILK"/>
+<part name="VLED" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39288/1" value="JUMPER-SMT_3_1-NC_TRACE_SILK"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_02" device="1X02_NO_SILK"/>
 <part name="J5" library="SparkFun-Connectors" deviceset="CONN_04" device="1X04_NO_SILK"/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -25033,8 +25033,8 @@ disable PWR LED</text>
 Open Jumper (Default): 0x23
 Closed Jumper: 0x22</text>
 <wire x1="0" y1="88.9" x2="160.02" y2="88.9" width="0.2032" layer="97" style="longdash"/>
-<text x="33.274" y="155.956" size="1.27" layer="97" font="vector">Cut jumper to remove 3.3V power
-Close jumper to use VIN as VLED
+<text x="33.274" y="155.956" size="1.778" layer="97" font="vector">This jumper selects the power 
+used for LEDs. Default is 3.3V.
 VIN Max: 5.5V</text>
 <text x="148.59" y="6.604" size="2.54" layer="94" font="vector">Revised by: Priyanka Makin</text>
 <wire x1="160.02" y1="88.9" x2="193.04" y2="88.9" width="0.2032" layer="97" style="longdash"/>
@@ -25194,7 +25194,7 @@ VIN Max: 5.5V</text>
 <instance part="ADDR" gate="G$1" x="132.588" y="57.404" smashed="yes" rot="R90">
 <attribute name="NAME" x="130.048" y="54.864" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
-<instance part="LED_PWR" gate="G$1" x="20.574" y="158.496" smashed="yes" rot="R90">
+<instance part="VLED" gate="G$1" x="20.574" y="158.496" smashed="yes" rot="R90">
 <attribute name="NAME" x="15.494" y="161.417" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J1" gate="G$1" x="238.76" y="132.08" smashed="yes" rot="R180">
@@ -25308,7 +25308,7 @@ VIN Max: 5.5V</text>
 <wire x1="218.44" y1="109.22" x2="218.44" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_PWR" gate="G$1" pin="3"/>
+<pinref part="VLED" gate="G$1" pin="3"/>
 <wire x1="25.654" y1="158.496" x2="28.194" y2="158.496" width="0.1524" layer="91"/>
 <pinref part="SUPPLY18" gate="G$1" pin="3.3V"/>
 <wire x1="28.194" y1="158.496" x2="28.194" y2="161.036" width="0.1524" layer="91"/>
@@ -25758,7 +25758,7 @@ VIN Max: 5.5V</text>
 <wire x1="104.394" y1="150.876" x2="78.994" y2="150.876" width="0.1524" layer="91"/>
 <wire x1="28.194" y1="150.876" x2="20.574" y2="150.876" width="0.1524" layer="91"/>
 <junction x="28.194" y="150.876"/>
-<pinref part="LED_PWR" gate="G$1" pin="2"/>
+<pinref part="VLED" gate="G$1" pin="2"/>
 <wire x1="20.574" y1="150.876" x2="20.574" y2="153.416" width="0.1524" layer="91"/>
 <junction x="104.394" y="150.876"/>
 <label x="142.494" y="150.876" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -25831,7 +25831,7 @@ VIN Max: 5.5V</text>
 <wire x1="228.6" y1="132.08" x2="228.6" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_PWR" gate="G$1" pin="1"/>
+<pinref part="VLED" gate="G$1" pin="1"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
 <wire x1="15.494" y1="158.496" x2="12.7" y2="158.496" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="158.496" x2="12.7" y2="162.56" width="0.1524" layer="91"/>
