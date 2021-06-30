@@ -30,7 +30,7 @@
 #define I2C_ADDRESS_DEFAULT (0x23) //Default I2C address
 #define I2C_ADDRESS_JUMPER (0x22) //Address with jumper closed 
 #define LED_LENGTH (10) //Code supports LED strip up to length 100
-#define LED_LENGTH_MAX (90) //Use an external power supply if adding LEDs 
+#define LED_LENGTH_MAX (100) //Use an external power supply if adding LEDs 
 
 #define COMMAND_CHANGE_ADDRESS (0xC7)
 #define COMMAND_CHANGE_LED_LENGTH (0x70)
@@ -120,11 +120,11 @@ void receiveEvent(int numberOfBytesReceived)
       if (Wire.available())
       {
         byte number = Wire.read();
-        if (number < 1 || number > LED_LENGTH_MAX)
+        if (number < 0 || number > LED_LENGTH_MAX)
           continue; //error check, cannot write to array indexed at locations <0 or >max index
-        LEDStrip[number - 1].red = Wire.read();
-        LEDStrip[number - 1].green = Wire.read();
-        LEDStrip[number - 1].blue = Wire.read();
+        LEDStrip[number].red = Wire.read();
+        LEDStrip[number].green = Wire.read();
+        LEDStrip[number].blue = Wire.read();
       }
     }
     else if (incoming == COMMAND_WRITE_ALL_LED_COLOR) { //Change color all LEDs same
@@ -176,9 +176,9 @@ void receiveEvent(int numberOfBytesReceived)
       if (Wire.available())
       {
         byte number = Wire.read();
-        if (number < 1 || number > LED_LENGTH_MAX)
+        if (number < 0 || number > LED_LENGTH_MAX)
           continue; //error check, cannot write to array indexed at locations <0 or >max index
-        LEDStrip[number - 1].brightness = Wire.read();
+        LEDStrip[number].brightness = Wire.read();
       }
     }
     else if (incoming == COMMAND_WRITE_ALL_LED_BRIGHTNESS) { //change brightness of all LEDs (same)
@@ -228,7 +228,7 @@ void readSystemSettings(void)
     setting_i2c_address = I2C_ADDRESS_DEFAULT; //By default, we listen for I2C_ADDRESS_DEFAULT
     EEPROM.write(LOCATION_I2C_ADDRESS, setting_i2c_address);
   }
-  //Read what I2C address we should use
+  //Read the length of the LED string
   setting_LED_length = EEPROM.read(LOCATION_LED_LENGTH);
   if (setting_LED_length == 255)
   {
