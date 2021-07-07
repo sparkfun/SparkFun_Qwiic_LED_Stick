@@ -66,6 +66,10 @@ void setup() {
   pinMode(addr, INPUT_PULLUP);
   pinMode(dataPin, OUTPUT); //Data out to the LEDs
   pinMode(clkPin, OUTPUT); //clkPin for LED data shift
+
+  digitalWrite(dataPin, LOW);
+  digitalWrite(clkPin, LOW);
+
   set_sleep_mode(SLEEP_MODE_PWR_DOWN);
   sleep_enable();
   readSystemSettings(); //Load all system settings from EEPROM
@@ -215,6 +219,8 @@ void WriteLED(void) {
     shiftOut(dataPin, clkPin, MSBFIRST, (byte)0);
   }
   shiftOut(dataPin, clkPin, MSBFIRST, (byte)1);
+
+  digitalWrite(dataPin, LOW);
 }
 
 //Reads the current system settings from EEPROM
